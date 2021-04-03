@@ -5,7 +5,7 @@ class Book(object, metaclass=ABCMeta):
         self.title=title
         self.author=author
     @abstractmethod
-    def display():
+    def display(self):
         pass
 
 class MyBook(Book):

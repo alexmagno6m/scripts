@@ -1,5 +1,5 @@
 #Day 12 30 days of code
-class person(object):
+class Person(object):
     def __init__(self, firstName, lastName, idNumber):
         self.firstName = firstName
         self.lastName = lastName
@@ -9,7 +9,7 @@ class person(object):
         print("Name:", self.lastName + ",", self.firstName)
         print("ID:", self.idNumber)
 
-class Student(person):
+class Student(Person):
     def __init__(self, firstName, lastName, idNumber, scores):
         super().__init__(firstName, lastName, idNumber)
         self.scores= scores

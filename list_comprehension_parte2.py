@@ -22,3 +22,5 @@ for i in range(n):
     scores.append(score)
     
 print(names)
+for j in range (10):
+    print(j)

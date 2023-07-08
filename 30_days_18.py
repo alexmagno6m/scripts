@@ -1,20 +1,21 @@
-#Day 18 - hackerRank - palindrome
-class Solution(object):
-    def __init__(self,stack='', queue=''):
+# Day 18 - hackerRank - palindrome
+class Solution():
+    def __init__(self, stack='', queue=''):
         self.stack = stack
         self.queue = queue
 
     def pushCharacter(self, nuevas):
         self.stack = self.stack + nuevas
 
-
     def enqueueCharacter(self, nuevas):
         self.queue = nuevas + self.queue
 
     def popCharacter(self):
         return self.stack
+
     def dequeueCharacter(self):
         return self.queue
+
 
 s = 'tacocat'
 obj = Solution()
@@ -24,17 +25,16 @@ for i in range(l):
     obj.pushCharacter(s[i])
     obj.enqueueCharacter(s[i])
 
-isPalindrome=True
+isPalindrome = True
 for i in range(l // 2):
-    if obj.popCharacter()!=obj.dequeueCharacter():
-        isPalindrome=False
+    if obj.popCharacter() != obj.dequeueCharacter():
+        isPalindrome = False
         break
-#finally print whether string s is palindrome or not.
+# finally print whether string s is palindrome or not.
 if isPalindrome:
-    print("The word, "+s+", is a palindrome.")
+    print("The word, " + s + ", is a palindrome.")
 else:
-    print("The word, "+s+", is not a palindrome.")
-
+    print("The word, " + s + ", is not a palindrome.")
 
 # fon = 'racecar'
 # r_for = fon.lower()
@@ -50,4 +50,3 @@ else:
 #     print('is palindromo')
 # else:
 #     print('no es palindromo')
-
